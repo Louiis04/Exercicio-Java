@@ -117,7 +117,7 @@ public class RespostaListaExercicio {
 			if(numero > 1){
 				boolean primo = true;
 				for (int j = 2; j <= Math.sqrt(numero);j++){
-					if(numero % 2 == 0){
+					if(numero % j == 0){
 						primo = false;
 						break;
 					}
@@ -138,7 +138,7 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosImpares(int[] array) 
 	{
-		for(int i = 0; i > array.length; i++){
+		for(int i = 0; i < array.length; i++){
 			if(array[i] % 2 != 0){
 				System.out.print(array[i] + " ");
 			}
@@ -154,7 +154,7 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPares(int[] array) 
 	{
-		for(int i = 0; i > array.length; i++){
+		for(int i = 0; i < array.length; i++){
 			if(array[i] % 2 == 0){
 				System.out.print(array[i] + " ");
 			}
@@ -178,7 +178,7 @@ public class RespostaListaExercicio {
 				maior = array[i];
 			}
 			if(array[i] < menor){
-				menor = array[i]
+				menor = array[i];
 			}
 		}
 		System.out.print(maior + " " + menor + " ");
